@@ -6,11 +6,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Loongphy/codex-auth"
+    "url": "https://github.com/soicoi/codex-account-manager.git"
   },
-  "homepage": "https://github.com/Loongphy/codex-auth",
+  "homepage": "https://github.com/soicoi/codex-account-manager",
   "bugs": {
-    "url": "https://github.com/Loongphy/codex-auth/issues"
+    "url": "https://github.com/soicoi/codex-account-manager/issues"
   },
   "bin": {
     "codex-auth": "bin/codex-auth.js"
