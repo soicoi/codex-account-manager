@@ -1,0 +1,21 @@
+# Documentation First
+
+- `docs/implement.md` is the primary context for how the project works. Read it first.
+- If there is a conflict between `docs/implement.md` and the code, the code is the source of truth.
+- When a conflict is found, update `docs/implement.md` to match the code and call this out in the final response.
+
+# Language
+
+- All user-facing CLI output, prompts, help text, warnings, and error messages must be written in English only.
+
+# Validation
+
+After modifying any `.zig` file, always run `zig build run -- list` to verify the changes work correctly.
+
+# Zig API Discovery
+
+- Do not guess Zig APIs from memory or from examples targeting other Zig versions.
+- Before using or changing a Zig API, run `zig env` and `zig version` to confirm the local toolchain and source layout.
+- Use the paths reported by `zig env` as the source of truth, especially `std_dir` for the standard library and `lib_dir` for other bundled Zig libraries.
+- Prefer evidence from local sources: symbol definitions, nearby tests, and existing call sites in this repository.
+- If the needed behavior is not clear from `std_dir`, inspect other Zig sources and tests under the local `lib_dir` tree as needed.
