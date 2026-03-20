@@ -2,6 +2,7 @@
   "name": "@loongphy/codex-auth",
   "version": "0.2.2-alpha.1",
   "description": "CLI for switching Codex accounts",
+  "author": "Pham Hoang",
   "main": "manager/electron-main.js",
   "license": "MIT",
   "repository": {
